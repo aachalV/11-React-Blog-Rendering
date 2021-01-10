@@ -1,0 +1,48 @@
+/*Footer  */
+footer {
+  background-color: black;
+  color: white;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+footer .social-links a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+.text span {
+  color: #fcec10;
+}
+footer a {
+  font-size: 35px;
+}
+footer i {
+  color: aliceblue;
+  background-color: black;
+  position: fixed;
+  bottom: 45px;
+  right: 30px;
+  border-radius: 50%;
+}
+/* Responsive Footer */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .social-icons .fa {
+    padding: 10px;
+  }
+  .social-icons {
+    margin-top: 6%;
+  }
+  .text {
+    text-align: center;
+  }
+}
+/*  // Footer */
