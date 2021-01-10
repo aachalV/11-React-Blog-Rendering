@@ -1,0 +1,162 @@
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+} */
+
+/* Style the body */
+/* body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding-bottom: 155.19px;
+  margin: 0;
+} */
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  /* justify-content: flex-end; */
+  background-color: black;
+  justify-content: space-between;
+}
+.logo {
+  height: 60px;
+  width: 160px;
+  margin-left: 20px;
+}
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+.myBlog {
+  text-align: center;
+}
+.main h2 {
+  font-style: italic;
+  margin-top: 20px;
+}
+.main h3 {
+  font-style: italic;
+}
+.main p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* Sidebar*/
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.blog-image {
+  width: 100%;
+}
+.blog-image img {
+  width: 100%;
+  height: 300px;
+}
+.side li {
+  font-style: italic;
+  list-style: none;
+  padding: 8px;
+}
+.side li:hover {
+  cursor: pointer;
+}
+/*Footer  */
+footer {
+  background-color: black;
+  color: white;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+footer .social-links a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+.text span {
+  color: #fcec10;
+}
+footer a {
+  font-size: 35px;
+}
+footer i {
+  color: aliceblue;
+  background-color: black;
+  position: fixed;
+  bottom: 45px;
+  right: 30px;
+  border-radius: 50%;
+}
+/* Responsive Footer */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .social-icons .fa {
+    padding: 10px;
+  }
+  .social-icons {
+    margin-top: 6%;
+  }
+  .text {
+    text-align: center;
+  }
+}
+/*  // Footer */
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .nav-links {
+    flex-direction: column;
+  }
+}
