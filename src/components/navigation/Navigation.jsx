@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import styles from "../navigation/Navigation.module.css";
 class Navigation extends Component {
   render() {
@@ -12,7 +13,7 @@ class Navigation extends Component {
           />
         </div>
         <div className={styles["nav-links"]}>
-          <a href="#">Home</a>
+          <Link to="/">Home </Link>
           <a href="#">About</a>
           <a href="#contact">Contact</a>
         </div>
