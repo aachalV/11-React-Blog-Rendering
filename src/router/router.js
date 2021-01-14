@@ -17,7 +17,7 @@ class Router extends Component {
             exact
             render={(props) => {
               console.log("history", props);
-              return <Profile {...props} />;
+              return <Blog {...props} />;
             }}
           /> */}
         </Switch>
