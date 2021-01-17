@@ -21,7 +21,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Introduction
 
-* Application basically is a React front end UI which will render a blog page. The blog page data will be fetched from a node backend hosted on Heroku. 
+* Application basically is a React front end UI which will render a blog page. The blog page data will be fetched from a node backend hosted on Heroku (https://backend-for-react-blog-render.herokuapp.com). 
+   
+* Deployment
+  * Application is hosted on Vercel
+  * Live demo can be seen here : (https://11-react-blog-rendering.vercel.app/)
+ 
 
 * The application UI contains following sections
 
@@ -29,9 +34,13 @@ It correctly bundles React in production mode and optimizes the build for the be
   2. Footer with social media icons and navigation links
   3. Home Page with all tiles of each blog.
   
- * Upon clicking on a single blog link the application UI will rerender to display the blog details.
+ ## Features
+  1. Fully responsive
+  2. Upon clicking on a single blog tile the application UI will rerender to display the blog details.
 
-    1. Blog heading
-    2. Blog content
-    3. Blog banner image
-    4. Aside section with related links
+      1. Blog heading
+      2. Blog content
+      3. Blog banner image
+      4. Aside section with related links
+    
+  2. Upon clicking a link in the related link section of a Blog, the web page rerenders the details and display the details of the blog whose link was clicked. 
