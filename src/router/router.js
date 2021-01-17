@@ -11,7 +11,6 @@ class Router extends Component {
         <Navigation />
         <Switch>
           <Route path="/" exact component={Home} />
-          {/* <Route path="/blog" exact component={Blog} /> */}
           <Route path="/blog/:id" exact component={Blog} />
         </Switch>
         <Footer />

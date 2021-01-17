@@ -12,26 +12,32 @@ function Footer() {
           href="https://twitter.com/"
           target="_blank"
           rel="noreferrer"
-          class="fa fa-twitter twitter"
+          className={["fa fa-twitter twitter"]}
         ></a>
         |
         <a
           href="https://www.linkedin.com/"
           target="_blank"
           rel="noreferrer"
-          class="fa fa-linkedin linkedin"
+          className={["fa fa-linkedin linkedin"]}
         ></a>
         |
         <a
           href="https://www.facebook.com/"
           target="_blank"
           rel="noreferrer"
-          class="fa fa-facebook facebook"
+          className={["fa fa-facebook facebook"]}
         ></a>
-        |<a href="https://github.com/" class="fa fa-github github"></a>
+        |
+        <a
+          href="https://github.com/"
+          className={["fa fa-github github"]}
+          target="_blank"
+          rel="noreferrer"
+        ></a>
       </div>
-      <a id="upArrow" href="#nav" target="_blank" rel="noreferrer">
-        <i class="fa fa-arrow-circle-up"></i>
+      <a id="upArrow" href="#nav">
+        <i className={["fa fa-arrow-circle-up"]}></i>
       </a>
     </footer>
   );

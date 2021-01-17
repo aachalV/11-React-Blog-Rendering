@@ -58,7 +58,7 @@ class Blog extends Component {
               ? this.state.blog.links.map((link) => {
                   console.log(link.title);
                   return (
-                    <li>
+                    <li key={link.id}>
                       <Link to={`/blog/${link.id}`}>{link.title}</Link>
                     </li>
                   );

@@ -14,7 +14,7 @@ class Navigation extends Component {
         </div>
         <div className={styles["nav-links"]}>
           <Link to="/">Home </Link>
-          <a href="#">About</a>
+          <a href="/">About</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
