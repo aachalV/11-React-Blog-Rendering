@@ -7,19 +7,12 @@ import Footer from "../components/footer/Footer";
 class Router extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter forceRefresh={true}>
         <Navigation />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/blog" exact component={Blog} />
-          {/* <Route
-            path="/blogs/:id"
-            exact
-            render={(props) => {
-              console.log("history", props);
-              return <Blog {...props} />;
-            }}
-          /> */}
+          {/* <Route path="/blog" exact component={Blog} /> */}
+          <Route path="/blog/:id" exact component={Blog} />
         </Switch>
         <Footer />
       </BrowserRouter>

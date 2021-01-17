@@ -3,16 +3,15 @@ import { withRouter } from "react-router-dom";
 
 import styles from "../../pages/home/Home.module.css";
 
-// import fetchData from "../../api/fetchData";
 class RenderBlogTile extends Component {
+  // renderBlog = (event) => {
+  //   this.props.history.push("/blog", { blog: this.props.blog });
+  // };
   renderBlog = (event) => {
-    // console.log("renderblog=>Event", this.props.blog);
-    this.props.history.push("/blog", { blog: this.props.blog });
+    this.props.history.push(`/blog/${this.props.blog.id}`);
   };
-
   render() {
     let { blog } = this.props;
-    // console.log("PROPS=>", blog);
     return (
       <div className={styles["employee-card"]} onClick={this.renderBlog}>
         <div className={styles["employee-image-container"]}>

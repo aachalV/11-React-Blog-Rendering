@@ -6,10 +6,9 @@ class Home extends Component {
   state = {
     blogs: [],
   };
-
   componentDidMount = () => {
-    data.then((blogsArray) => {
-      this.setState({ blogs: blogsArray });
+    data("/blogList/blogs").then((response) => {
+      this.setState({ blogs: response.data.data[0] });
     });
   };
   render() {

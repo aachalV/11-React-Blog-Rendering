@@ -1,10 +1,8 @@
 const axios = require("axios");
-// const url =
-//   "https://niravkpatel28.github.io/json-data-server/employees/employees.json";
-const url = "https://niravkpatel28.github.io/json-data-server/blogs/blogs.json";
-//immediately invoked funtion expression IIFE
-export const data = (async () => {
-  let response = await axios.get(url);
+const BASE_URL = "http://localhost:5000";
 
-  return response.data;
-})();
+export const data = async (params) => {
+  return axios.get(`${BASE_URL}${params}`);
+};
+
+// const url = "https://niravkpatel28.github.io/json-data-server/blogs/blogs.json";
