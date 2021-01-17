@@ -44,3 +44,9 @@ It correctly bundles React in production mode and optimizes the build for the be
       4. Aside section with related links
     
   2. Upon clicking a link in the related link section of a Blog, the web page rerenders the details and display the details of the blog whose link was clicked. 
+
+### New Concepts used
+   1. history object
+   2. withRouter from "react-router-dom"
+   3. conditional rendering
+   4. Learned how to handle routing when component is not changing but only the params in url are changing and still render the page using Link 
